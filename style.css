@@ -1,0 +1,43 @@
+* {
+	background-color: #0D0D0D;
+	color: #F7F7F7;
+	font-family: Roboto;
+}
+body {
+	width: 90%; 
+	max-width: 1024px; 
+	padding: 50px;
+	margin: auto;
+}
+header {
+	background-color: #303031;
+	display: flex;
+}
+footer {
+	background-color: #303031;
+	display: flex;
+	padding: 20px;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main {
+	font-size: 120%
+}
+.motto {
+	background-color: #303031;
+	font-size:120%;
+	font-style: italic;
+	padding-left:10px
+}
+nav {
+  background-color: #303031;
+  margin-left: auto;
+  margin-right: 5px;
+  margin-top: 20px
+}
+.nav-links {
+  background-color: #303031
+}
