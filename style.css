@@ -26,6 +26,12 @@ footer {
 .main {
 	font-size: 120%
 }
+.formLabel {
+}
+.formTextbox {
+	background-color: #ffffff;
+}
+
 .motto {
 	background-color: #303031;
 	font-size:120%;
