@@ -27,6 +27,11 @@ form {
 .form-paragraph {
 	display: table-row
 }
+.newsletter {
+	font-size: 120%;
+	margin-left: 300px;
+	padding-top: 10px;
+}
 .owner {
 	display: table-cell;
 	text-align: left;
@@ -35,16 +40,27 @@ label {
 	display: table-cell
 }
 input {
+	color: #000000;
+	font-size: 120%;
 	display: table-row;
-	margin-left: -150%
+	margin-left: -250px
 }
 input[type="radio"] {
 	margin-left: 5px
 }
 table {
-	font-size: 80%;
+	border: 1px solid;
+	margin-bottom: 40px;
+	font-size: 90%;
 	text-align: left;
 	width: 350px;
+}
+th {
+	background-color: #303031;
+	border: 1px solid
+}
+td {
+	border: 1px solid
 }
 </style>
 </head>
@@ -55,6 +71,7 @@ table {
 	</a>
 	<p class="motto">Friendly, reliable, trustworthy.</p>
 	<nav>
+		<a class="nav-links" href="index.html">Home</a> |
 		<a class="nav-links" href="about.html">About Us</a> |
 		<a class="nav-links" href="services.html">Our Services</a> |
 		<a class="nav-links" href="faqs.html">FAQs</a> |
@@ -62,7 +79,6 @@ table {
 	</nav>
 </header>
 <div style="float: left">
-	<img src="contact.jpg" width="400" height="200"/>
 	<p>Plenary Consulting is located in <strong>San Antonio, TX.</strong></p>
 	<table>
 	  <tr>
@@ -82,6 +98,11 @@ table {
 		<td>By Contract Only</td>
 	  </tr>
 	</table>
+	<p>
+		E-mail: <a href="mailto:aafasih@gmail.com">aafasih@gmail.com</a> | 
+		Phone:  <a href="tel:2105552020">(210) 555-2020</a>
+	</p>
+	<img src="contact.jpg" width="400" height="200"/>
 </div>
 <div class="form-container">
 	<p>
@@ -98,11 +119,11 @@ table {
 		</p>
 		<p class="form-paragraph">
 			<label class="formLabel" for="email">E-mail address:</label>
-			<input class="formTextbox" type="text" id="email" required="true"></br>
+			<input class="formTextbox" type="email" id="email" required="true"></br>
 		</p>
 		<p class="form-paragraph">
 			<label class="formLabel" for="phone">Phone number:</label>
-			<input class="formTextbox" type="text" id="phone"></br>
+			<input class="formTextbox" type="tel" id="phone"></br>
 		</p>
 		
 	<br />
@@ -122,7 +143,9 @@ table {
 				<input type="radio" id="anytime" name="contact" value="anytime" />Anytime
 			</fieldset>
 	</div>
-	<br />
+	<div class="newsletter">
+		<input type="checkbox" id="newsletter" name="newsletter" value="yes">I would like to receive a newsletter.
+	</div>
 	<div class="button-container">
 		<button class="cancel" type="button">Cancel</button>
 		<button type="submit">Submit</button>
